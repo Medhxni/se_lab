@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building Java Application'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing Java Application'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deployment Completed'
+            }
+        }
+    }
+}
